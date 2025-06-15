@@ -1,73 +1,114 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title >SHAIK ARMAAN SHOAIB</title>
+    <title>SHAIK ARMAAN SHOAIB</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        .top {
+            background-color: #2c3e50;
+            color: white;
+            padding: 50px 20px;
+            text-align: center;
+        }
+    
+        h2 {
+            border-bottom: 2px solid #8e44ad;
+            padding-bottom: 5px;
+            color: #2c3e50;
+        }
+        .project, .experience {
+            background-color: white;
+            margin-bottom: 0px;
+            padding: 20px;
+            border-left: 4px solid #8e44ad;
+            box-shadow: 0px 0px 8px rgba(0,0,0,0.05);
+        }
+        .project h3, .experience h3 {
+            margin-top: 0;
+        }
+        #resume {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #8e44ad;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        #resume a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        ul li {
+            margin-bottom: 8px;
+        }
+    </style>
 </head>
 <body>
-    <div class="top">        
-        <div class="container">            
-                <u style="color: white; text-decoration-thickness: 3px;"><p style="font-family: 'Segoe UI'; font-size: 42px; color: aliceblue; text-align: center; font-weight: 400;">SHAIK ARMAAN SHOAIB</p></u>
-                <div class = "about">
-                    <p >Welcome to my portfolio, I am a final-year B.Tech student specializing in Computer Science and Engineering (CSE) at
-                        Mahatma Gandhi Institute of Technology, driven by a passion for technology and a desire to
-                        learn so much about tech industry. 
-                        
-                    </p>
-                </div>
-                <button id="resume">
-                    <a href="Armaan_5C0_Resume_LTX.pdf" download style="text-decoration: none;"><span style="color: aliceblue; font-family: helvetica; font-weight: 500;"> Download My Resume </span></a>
-                </button>
-                <br>
-                <br>
+    <div class="top">
+        <h1>SHAIK ARMAAN SHOAIB</h1>
+        <div class="about">
+            <p>Final-year B.Tech CSE student at Mahatma Gandhi Institute of Technology, passionate about technology and continuous learning in the tech industry.</p>
         </div>
+        <button id="resume">
+            <a href="Armaan_5C0_Resume_LTX.pdf" download>Download My Resume</a>
+        </button>
     </div>
+
+    <section id="experience">
+        <div class="container">
+            <h2>Experience</h2>
+            <div class="experience">
+                <h3>System Engineering Intern, Crowe Horwath IT Services LLP</h3>
+                <p><em>Feb 2025 - Present, Hyderabad, India</em></p>
+                <ul>
+                    <li>Managed Azure infrastructure including Load Balancers, VMSS, and cost optimization using Azure Advisor.</li>
+                    <li>Handled code merges and deployments using Azure DevOps Pipelines and Lifecycle Services (LCS) for D365 F&O.</li>
+                    <li>Performed database backup and refresh operations across Tier-1 and Tier-2 environments using SSMS.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
 
     <section id="projects">
         <div class="container">
             <h2>Projects</h2>
             <div class="project">
-                <h3>AI PDF Summarizer &emsp; <u> <a style="font-weight: 200px; font-style: italic; font-size: large;" href="http://3.108.168.139:5000"><span style="color: blueviolet;" >View Project</span></a> </u></h3>
-                <p>Flask (Python Framework) and JSP based web application that summarizes PDF documents using Artificial Intelligence.<br>
-                    Developed using Cloudmersive API to extract content from PDF and ChatGPT API from Rapid API Platform to summarize the extracted text.<br>
-                    Deployed the web app in AWS EC2 Instance.<br>
-                    Tech Stack : <Strong>Frontend</Strong> : HTML,CSS, JavaScript. <Strong>Backend</Strong> : Python Flask & Java Server Pages
-            </p>
-
+                <h3>AI PDF Summarizer <a href="http://3.108.168.139:5000" target="_blank">(View Project)</a></h3>
+                <p>Flask and JSP based AI document summarizer using Cloudmersive API and ChatGPT API. Deployed on AWS EC2.<br>
+                <strong>Tech Stack</strong>: HTML, CSS, JavaScript, Python Flask, Java JSP</p>
             </div>
             <div class="project">
-                <h3>Social Media Video Downloader &emsp; <u> <a style="font-weight: 200px; font-style: italic; font-size: large;" href="http://3.108.168.139:8080/VideoDownloader/"><span style="color: blueviolet;" >View Project</span></a> </u></h3>
-                <p>All in one social media video downloading web application using JSP to download YouTube Shorts and Videos, Instagram Reels, Facebook Videos etc.
-                   Frontend -  HTML,CSS, JavaScript<br>
-                   Backend - Java<br>
-                   Used REST APIs with Java to fetch media details.
-            </p>
-
+                <h3>Social Media Video Downloader <a href="http://3.108.168.139:8080/VideoDownloader/" target="_blank">(View Project)</a></h3>
+                <p>JSP-based app to download videos from YouTube, Instagram, Facebook using REST APIs.<br>
+                <strong>Tech Stack</strong>: HTML, CSS, JavaScript, Java</p>
             </div>
             <div class="project">
-                <h3>URL Shortener &emsp; <u> <a style="font-weight: 200px; font-style: italic; font-size: large;" href="http://3.108.168.139:8080/shortURL/"><span style="color: blueviolet;" >View Project</span></a> </u></h3>
-                <p>Simple URL (Uniform Resource Link) shortener web application using Java, HTML, CSS, JS. Stores URLs in a mysql Database for original URL retrieval functionality.</p>
-
+                <h3>Jumble Word Solver <a href="http://3.108.168.139:8080/JumbleWord/" target="_blank">(View Project)</a></h3>
+                <p>Solves jumbled words using a JSP interface and a wordlist of 5000+ entries.</p>
             </div>
-            <div class="project">
-                <h3>Jumble Word Solver &emsp; <u> <a style="font-weight: 200px; font-style: italic; font-size: large;" href="http://3.108.168.139:8080/JumbleWord/"><span style="color: blueviolet;" >View Project</span></a> </u></h3>
-                <p>Developed a jumbled word solving web application using Java Server Pages (JSP) that solves
-                    jumbled word in a list of over 5000 words.</p>
+        </div>
+    </section>
 
-            </div>
-            <!--===========================-->
-            
-            </div>       
+    <section id="contact">
         <div class="container">
             <h2>Contact</h2>
             <ul>
-                <li>Email: <a href="mailto:your.email@example.com"><span style="color: blueviolet;" >armaanshoaib.as@gmail.com</span></a></li>
-                <li>Phone:+91 9652027418</li>
-                <li>LinkedIn: <a href="https://www.linkedin.com/in/armaanshoaib" target="_blank"><span style="color: blueviolet;" >https://www.linkedin.com/in/armaanshoaib</span></a></li>
-                <li>GitHub: <a href="https://github.com/armaanshoaib/" target="_blank"><span style="color: blueviolet;" >https://github.com/armaanshoaib/</span></a></li>
+                <li>Email: <a href="mailto:armaanshoaib.as@gmail.com">armaanshoaib.as@gmail.com</a></li>
+                <li>Phone: +91 9652027418</li>
+                <li>LinkedIn: <a href="https://www.linkedin.com/in/armaanshoaib" target="_blank">linkedin.com/in/armaanshoaib</a></li>
+                <li>GitHub: <a href="https://github.com/armaanshoaib/" target="_blank">github.com/armaanshoaib</a></li>
             </ul>
         </div>
-        </section>
-    
+    </section>
 </body>
 </html>
